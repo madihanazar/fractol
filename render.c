@@ -31,7 +31,7 @@ static void handle_pixel(int x, int y, t_fractol *fractol)
 	z.x = 0.0;
 	z.y = 0.0;
 	c.x = scale_val(x, -2, +2, 0, WIDTH);
-	c.y = scale_val(x, +2, -2, 0, HEIGHT);
+	c.y = scale_val(y, +2, -2, 0, HEIGHT);
 
 	while(i < fractol->iteration_def)
 	{
