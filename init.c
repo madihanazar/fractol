@@ -6,7 +6,7 @@
 /*   By: mnazar <mnazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:01:45 by mnazar            #+#    #+#             */
-/*   Updated: 2024/10/24 19:42:20 by mnazar           ###   ########.fr       */
+/*   Updated: 2024/11/06 18:29:38 by mnazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,17 @@ void data_init(t_fractol *fractol)
 {
 	fractol->escape_value = 4; // 2 ^ 2
 	fractol->iteration_def= 50; 
+	fractol->shift_x = 0.0;
+	fractol->shift_y = 0.0;
+	fractol->zoom = 1.0;
+}
+
+void events_init(t_fractol *fractol)
+{
+	//printf("hiii");
+	mlx_hook(fractol->mlx_window, 2, 0, key_handle, fractol);
+	mlx_mouse_hook(fractol->mlx_window, mouse_handle, fractol);
+	mlx_hook(fractol->mlx_window, 17, 0, close_handle, fractol);
 }
 void fractol_init(t_fractol *fractol)
 {
@@ -45,6 +56,6 @@ void fractol_init(t_fractol *fractol)
     }
     fractol->img.pixels_ptr = mlx_get_data_addr(fractol->img.img_ptr, &fractol->img.bpp, &fractol->img.line_length, &fractol->img.endian);
 
-	// events to do
     data_init(fractol);
+	events_init(fractol);
 }

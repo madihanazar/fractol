@@ -6,7 +6,7 @@
 /*   By: mnazar <mnazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:01:35 by mnazar            #+#    #+#             */
-/*   Updated: 2024/10/24 15:35:32 by mnazar           ###   ########.fr       */
+/*   Updated: 2024/11/06 17:34:14 by mnazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int ft_strlen(char *s)
     i = 0;
     while (s[i])
         i++;
-    return (0);
+    return (i);
 }
 
 void ft_putstr_fd(char *s, int fd)
@@ -39,3 +39,4 @@ int ft_strncmp(char *s1, char *s2, int n)
 	return (s1[i] - s2[i]);
 	
 }
+

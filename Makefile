@@ -1,7 +1,7 @@
 NAME = fractol
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRC = init.c main.c string_utils.c render.c math_utils.c
+SRC = init.c main.c string_utils.c render.c math_utils.c events.c mandelbrot.c julia.c
 MLX_DIR = minilibx
 MLX_SRC = $(MLX_DIR)/mlx_*.c  # All mlx source files
 

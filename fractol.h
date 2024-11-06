@@ -43,6 +43,11 @@ typedef struct s_fractol
 
 	double escape_value; //hypotenuse
 	int		iteration_def;
+	double	shift_x;
+	double	shift_y;
+	double  zoom;
+	double  julia_x;
+	double julia_y;
 }               t_fractol;
 
 typedef struct s_complex
@@ -62,5 +67,17 @@ double scale_val(double unscaled_num, double new_min, double new_max, double old
 t_complex sum_complex(t_complex z1, t_complex z2);
 t_complex square_complex(t_complex z);
 void data_init(t_fractol *fractol);
+void events_init(t_fractol *fractol);
+// hooks
+int key_handle(int key, t_fractol *fractol);
+int mouse_handle(int button, int x, int y, t_fractol *fractol);
+int close_handle(t_fractol *fractol);
+double	str_to_double(char *s);
+
+void mandelbrot(int x, int y, t_fractol *fractol);
+void julia(int x, int y, t_fractol *fractol);
+int init_mandelbrot(t_fractol *fractol);
+int init_julia(char *x, char *y, t_fractol *fractol);
+int is_valid(char *str);
 
 #endif
