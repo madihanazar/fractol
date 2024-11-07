@@ -22,9 +22,6 @@ Each pixel stands for a point on the complex plane. The program applies the form
 - **Julia set:** `z` starts at the pixel and `c` is a fixed value you pass on the command line. Every value of `c` gives a different Julia set.
 
 Points that escape are colored by how many iterations they took, which creates the colored bands around the edge. More iterations give a sharper edge but take longer to draw.
-
-![Mandelbrot set rendered with the default settings](images/mandelbrot.png)
-
 ## Build
 
 Requires macOS (links against OpenGL and AppKit). MiniLibX is included in `minilibx/`.
