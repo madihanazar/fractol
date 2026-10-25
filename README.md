@@ -1,6 +1,9 @@
 # fractol
 
-![Uploading Mandelbrot_Animation0.gif…]()
+
+
+
+![Uploading Screenshot 2026-10-25 141827.png…]()
 
 
 
