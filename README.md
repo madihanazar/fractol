@@ -1,5 +1,6 @@
 # fractol
 
+<img width="752" height="681" alt="Screenshot 2026-10-25 141827" src="https://github.com/user-attachments/assets/3f1a796b-83d9-462d-811b-1807a1d5b6ae" />
 An interactive fractal viewer written in C using MiniLibX. It renders the Mandelbrot and Julia sets in an 800×800 window.
 
 ## Build
