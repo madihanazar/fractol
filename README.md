@@ -2,8 +2,7 @@
 
 
 
-
-![Uploading Screenshot 2026-10-25 141827.png…]()
+<img width="321" height="241" alt="Mandelbrot_Animation0" src="https://github.com/user-attachments/assets/2a9cb783-ab20-4b9f-9208-70a32b5ea21d" />
 
 
 
